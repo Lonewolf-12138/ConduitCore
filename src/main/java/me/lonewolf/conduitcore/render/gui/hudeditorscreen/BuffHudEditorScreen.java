@@ -1,18 +1,14 @@
 package me.lonewolf.conduitcore.render.gui.hudeditorscreen;
 
-import dlovin.inventoryhud.config.widgets.TextWidget;
-import dlovin.inventoryhud.utils.WidgetAligns;
 import me.lonewolf.conduitcore.render.gui.hudeditorscreen.widget.FormatTextFieldWidget;
 import me.lonewolf.conduitcore.render.gui.widget.NumberTextFieldWidget;
+import me.lonewolf.conduitcore.render.gui.widget.TextWidget;
 import me.lonewolf.conduitcore.util.config.BuffConfig;
 import net.minecraft.client.gui.widget.ButtonWidget;
-import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.text.Text;
 
 import java.io.IOException;
-import java.text.DecimalFormat;
-import java.text.Format;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,12 +37,12 @@ public class BuffHudEditorScreen extends HudEditorScreen{
     protected void init() {
         super.init();
         int fontHeight = textRenderer.fontHeight;
-        this.addDrawable(new TextWidget(width / 2 - 18, 75, 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.buff.enable"), textRenderer));
-        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 1), 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.buff.offX"), textRenderer));
-        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 2), 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.buff.offY"), textRenderer));
-        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 3), 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.buff.format"), textRenderer));
-        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 4), 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.buff.isRightAligned"), textRenderer));
-        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 5), 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.buff.isDescending"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, 75, 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.buff.enable"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 1), 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.buff.offX"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 2), 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.buff.offY"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 3), 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.buff.format"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 4), 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.buff.isRightAligned"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 5), 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.buff.isDescending"), textRenderer));
         this.addDrawableChild(new ButtonWidget(width / 2 + 20, 65, 40, 20, Text.of(this.enable ? "§a开启" : "§c关闭"), button -> {
             enable = !enable;
             button.setMessage(Text.of(enable ? "§a开启" : "§c关闭"));

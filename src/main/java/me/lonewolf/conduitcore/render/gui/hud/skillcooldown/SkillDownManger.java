@@ -1,6 +1,5 @@
 package me.lonewolf.conduitcore.render.gui.hud.skillcooldown;
 
-import me.lonewolf.conduitcore.util.config.BuffConfig;
 import me.lonewolf.conduitcore.util.config.SkillCoolDownConfig;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
@@ -10,10 +9,8 @@ import net.minecraft.client.util.Window;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
 
-import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 

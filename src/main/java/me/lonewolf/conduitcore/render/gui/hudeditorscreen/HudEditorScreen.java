@@ -2,29 +2,15 @@ package me.lonewolf.conduitcore.render.gui.hudeditorscreen;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
-import dlovin.inventoryhud.config.InGameConfigScreen;
-import dlovin.inventoryhud.config.gui.ArmorConfigScreen;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.font.MultilineText;
-import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawableHelper;
-import net.minecraft.client.gui.screen.DisconnectedScreen;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.screen.option.ControlsOptionsScreen;
-import net.minecraft.client.gui.screen.option.GameOptionsScreen;
-import net.minecraft.client.gui.screen.option.KeybindsScreen;
-import net.minecraft.client.gui.screen.option.OnlineOptionsScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
-import net.minecraft.client.gui.widget.TexturedButtonWidget;
 import net.minecraft.client.render.*;
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
-import net.minecraft.util.Identifier;
 
 import java.text.DecimalFormat;
-import java.util.Objects;
 
 /**
  * @author Lonewolf_12138(QQ1090001011)

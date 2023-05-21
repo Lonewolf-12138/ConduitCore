@@ -1,9 +1,8 @@
 package me.lonewolf.conduitcore.render.gui.hudeditorscreen;
 
-import dlovin.inventoryhud.config.widgets.TextWidget;
-import dlovin.inventoryhud.utils.WidgetAligns;
 import me.lonewolf.conduitcore.render.gui.hudeditorscreen.widget.FormatTextFieldWidget;
 import me.lonewolf.conduitcore.render.gui.widget.NumberTextFieldWidget;
+import me.lonewolf.conduitcore.render.gui.widget.TextWidget;
 import me.lonewolf.conduitcore.util.config.SkillCoolDownConfig;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.resource.language.I18n;
@@ -34,11 +33,11 @@ public class SkillHudEditorScreen extends HudEditorScreen{
     protected void init() {
         super.init();
         int fontHeight = textRenderer.fontHeight;
-        this.addDrawable(new TextWidget(width / 2 - 18, 75, 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.skill.enable"), textRenderer));
-        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 1), 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.skill.offY"), textRenderer));
-        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 2), 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.skill.format"), textRenderer));
-        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 3), 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.skill.separator"), textRenderer));
-        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 4), 16777215, WidgetAligns.HAlign.RIGHT, I18n.translate("gui.skill.isCoordinateFromBottom"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, 75, 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.skill.enable"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 1), 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.skill.offY"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 2), 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.skill.format"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 3), 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.skill.separator"), textRenderer));
+        this.addDrawable(new TextWidget(width / 2 - 18, (int) (75 + fontHeight * 2.6 * 4), 16777215, TextWidget.Align.RIGHT, I18n.translate("gui.skill.isCoordinateFromBottom"), textRenderer));
         this.addDrawableChild(new ButtonWidget(width / 2 + 20, 65, 40, 20, Text.of(this.enable ? "§a开启" : "§c关闭"), button -> {
             enable = !enable;
             button.setMessage(Text.of(enable ? "§a开启" : "§c关闭"));

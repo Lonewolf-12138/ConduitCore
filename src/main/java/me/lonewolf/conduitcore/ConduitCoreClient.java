@@ -1,16 +1,12 @@
 package me.lonewolf.conduitcore;
 
 
-import dlovin.inventoryhud.config.InGameConfigScreen;
-import dlovin.inventoryhud.config.gui.ArmorConfigScreen;
 import me.lonewolf.conduitcore.keybinds.KeyBind;
+import me.lonewolf.conduitcore.network.MessageCore;
 import me.lonewolf.conduitcore.render.gui.hud.buff.BuffManager;
 import me.lonewolf.conduitcore.render.gui.hud.skillcooldown.SkillDownManger;
 import me.lonewolf.conduitcore.util.config.ConfigUtil;
 import net.fabricmc.api.ClientModInitializer;
-import me.lonewolf.conduitcore.network.MessageCore;
-import net.minecraft.client.gui.screen.option.ControlsOptionsScreen;
-import net.minecraft.client.gui.screen.option.GameOptionsScreen;
 
 /**
  * @author Lonewolf_12138(QQ1090001011)
