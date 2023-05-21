@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "conduitcore",
+  "version": "${version}",
+  "name": "ConduitCore",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/10900/ConduitCore"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/ConduitCore/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.lonewolf.conduitcore.ConduitCoreClient"
+    ]
+  },
+  "mixins": [
+    "ConduitCore.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

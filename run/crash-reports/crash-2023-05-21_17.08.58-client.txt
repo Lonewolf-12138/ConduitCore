@@ -1,0 +1,213 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 2023/5/21 下午5:08
+Description: charTyped event handler
+
+java.lang.NumberFormatException: For input string: "."
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:476)
+	at java.base/java.lang.Float.valueOf(Float.java:440)
+	at me.lonewolf.conduitcore.render.gui.widget.NumberTextFieldWidget.write(NumberTextFieldWidget.java:194)
+	at me.lonewolf.conduitcore.render.gui.widget.NumberTextFieldWidget.charTyped(NumberTextFieldWidget.java:418)
+	at net.minecraft.client.gui.ParentElement.charTyped(ParentElement.java:74)
+	at net.minecraft.client.Keyboard.method_1458(Keyboard.java:458)
+	at net.minecraft.client.gui.screen.Screen.wrapScreenError(Screen.java:492)
+	at net.minecraft.client.Keyboard.onChar(Keyboard.java:458)
+	at net.minecraft.client.Keyboard.method_22677(Keyboard.java:473)
+	at net.minecraft.util.thread.ThreadExecutor.execute(ThreadExecutor.java:103)
+	at net.minecraft.client.Keyboard.method_22675(Keyboard.java:473)
+	at org.lwjgl.glfw.GLFWCharModsCallbackI.callback(GLFWCharModsCallbackI.java:39)
+	at org.lwjgl.system.JNI.invokeV(Native Method)
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101)
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:204)
+	at net.minecraft.client.util.Window.swapBuffers(Window.java:310)
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1147)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737)
+	at net.minecraft.client.main.Main.main(Main.java:236)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:476)
+	at java.base/java.lang.Float.valueOf(Float.java:440)
+	at me.lonewolf.conduitcore.render.gui.widget.NumberTextFieldWidget.write(NumberTextFieldWidget.java:194)
+	at me.lonewolf.conduitcore.render.gui.widget.NumberTextFieldWidget.charTyped(NumberTextFieldWidget.java:418)
+	at net.minecraft.client.gui.ParentElement.charTyped(ParentElement.java:74)
+	at net.minecraft.client.Keyboard.method_1458(Keyboard.java:458)
+	at net.minecraft.client.gui.screen.Screen.wrapScreenError(Screen.java:492)
+	at net.minecraft.client.Keyboard.onChar(Keyboard.java:458)
+	at net.minecraft.client.Keyboard.method_22677(Keyboard.java:473)
+	at net.minecraft.util.thread.ThreadExecutor.execute(ThreadExecutor.java:103)
+	at net.minecraft.client.Keyboard.method_22675(Keyboard.java:473)
+	at org.lwjgl.glfw.GLFWCharModsCallbackI.callback(GLFWCharModsCallbackI.java:39)
+	at org.lwjgl.system.JNI.invokeV(Native Method)
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101)
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:204)
+
+-- Affected screen --
+Details:
+	Screen name: me.lonewolf.conduitcore.render.gui.hudeditorscreen.BuffHudEditorScreen
+Stacktrace:
+	at net.minecraft.client.gui.screen.Screen.wrapScreenError(Screen.java:492)
+	at net.minecraft.client.Keyboard.onChar(Keyboard.java:458)
+	at net.minecraft.client.Keyboard.method_22677(Keyboard.java:473)
+	at net.minecraft.util.thread.ThreadExecutor.execute(ThreadExecutor.java:103)
+	at net.minecraft.client.Keyboard.method_22675(Keyboard.java:473)
+	at org.lwjgl.glfw.GLFWCharModsCallbackI.callback(GLFWCharModsCallbackI.java:39)
+	at org.lwjgl.system.JNI.invokeV(Native Method)
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101)
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:204)
+	at net.minecraft.client.util.Window.swapBuffers(Window.java:310)
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1147)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737)
+	at net.minecraft.client.main.Main.main(Main.java:236)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['Lonewolf12138'/179, l='ClientLevel', x=-175.53, y=15.00, z=-26.19]]
+	Chunk stats: 625, 441
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-176,15,-27), Section: (at 0,15,5 in -11,0,-2; chunk contains blocks -176,0,-32 to -161,255,-17), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Level time: 9243 game time, 24000 day time
+	Server brand: Waterfall <- Purpur
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.addDetailsToCrashReport(ClientWorld.java:407)
+	at net.minecraft.client.MinecraftClient.addDetailsToCrashReport(MinecraftClient.java:2376)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:756)
+	at net.minecraft.client.main.Main.main(Main.java:236)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: Default, Fabric Mods
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.5, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
+	Memory: 229169008 bytes (218 MiB) / 964689920 bytes (920 MiB) up to 8568963072 bytes (8172 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 10
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 3.19
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce GTX 1660
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2184
+	Graphics card #0 versionInfo: DriverVersion=31.0.15.2824
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Memory slot #2 capacity (MB): 8192.00
+	Memory slot #2 clockSpeed (GHz): 2.67
+	Memory slot #2 type: DDR4
+	Memory slot #3 capacity (MB): 8192.00
+	Memory slot #3 clockSpeed (GHz): 2.67
+	Memory slot #3 type: DDR4
+	Virtual memory max (MB): 34732.79
+	Virtual memory used (MB): 21927.18
+	Swap memory total (MB): 2048.00
+	Swap memory used (MB): 85.05
+	JVM Flags: 0 total; 
+	Fabric Mods: 
+		conduitcore: ConduitCore 1.0
+		fabric-api: Fabric API 0.76.0+1.18.2
+		fabric-api-base: Fabric API Base 0.4.5+64b7c69360
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.3+2373a54560
+		fabric-biome-api-v1: Fabric Biome API (v1) 8.0.7+e83becad60
+		fabric-block-api-v1: Fabric Block API (v1) 1.0.0+ee3621fc60
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.13+3ac43d9560
+		fabric-command-api-v1: Fabric Command API (v1) 1.1.10+d7c144a860
+		fabric-commands-v0: Fabric Commands (v0) 0.2.9+b4f4f6cd60
+		fabric-containers-v0: Fabric Containers (v0) 0.1.24+d7c144a860
+		fabric-content-registries-v0: Fabric Content Registries (v0) 3.1.3+c85f2e3860
+		fabric-convention-tags-v1: Fabric Convention Tags 1.1.0+43ce63a460
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.1+ee261a3e60
+		fabric-data-generation-api-v1: Fabric Data Generation API (v1) 3.1.0+6c70b68e60
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.21+489d6f8260
+		fabric-entity-events-v1: Fabric Entity Events (v1) 1.4.9+d7c144a860
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.4.20+d7c144a860
+		fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.22+d7c144a860
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.13+d7c144a860
+		fabric-gametest-api-v1: Fabric Game Test API (v1) 1.0.21+91b7aa6660
+		fabric-item-api-v1: Fabric Item API (v1) 1.6.2+8165403660
+		fabric-item-groups-v0: Fabric Item Groups (v0) 0.3.16+91896a4960
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.12+54e5b2ec60
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.10+b4f4f6cd60
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.1.1+cc71601c60
+		fabric-loot-api-v2: Fabric Loot API (v2) 1.1.2+1997ad1260
+		fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.1.4+e747827960
+		fabric-mining-level-api-v1: Fabric Mining Level API (v1) 2.1.6+cc71601c60
+		fabric-models-v0: Fabric Models (v0) 0.3.7+d7c144a860
+		fabric-networking-api-v1: Fabric Networking API (v1) 1.0.24+2d30af4b60
+		fabric-networking-v0: Fabric Networking (v0) 0.3.11+b4f4f6cd60
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 2.1.5+032c981d60
+		fabric-particles-v1: Fabric Particles (v1) 0.2.13+526dc1ac60
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 0.9.12+bb2e047760
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 0.5.0+bf48649860
+		fabric-renderer-indigo: Fabric Renderer - Indigo 0.6.1+03e2b68760
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.12+b4f4f6cd60
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.9+ee3621fc60
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 2.0.3+54e5b2ec60
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.14+b4f4f6cd60
+		fabric-rendering-v1: Fabric Rendering (v1) 1.10.8+54e5b2ec60
+		fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 2.0.3+91b7aa6660
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.5.3+047a5ecb60
+		fabric-screen-api-v1: Fabric Screen API (v1) 1.0.11+d882b91560
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.2.3+1f6558e860
+		fabric-textures-v0: Fabric Textures (v0) 1.0.13+3ac43d9560
+		fabric-transfer-api-v1: Fabric Transfer API (v1) 1.6.4+f4563ac860
+		fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 1.1.0+e747827960
+		fabricloader: Fabric Loader 0.14.19
+		inventoryhud: Inventory HUD + 3.4.9
+		java: OpenJDK 64-Bit Server VM 17
+		lazydfu: LazyDFU 0.1.2
+		minecraft: Minecraft 1.18.2
+		smoothboot: Smooth Boot 1.18.2-1.7.0
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: NVIDIA GeForce GTX 1660/PCIe/SSE2 GL version 3.2.0 NVIDIA 528.24, NVIDIA Corporation
+	Window size: 854x480
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: Fabric Mods
+	Current Language: 简体中文 (中国大陆)
+	CPU: 12x Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz

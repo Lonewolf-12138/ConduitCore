@@ -1,0 +1,9 @@
+{
+  "enable": "true",
+  "format": "§7\u003cskill\u003e (§f\u003ccooldown\u003es§",
+  "offY": "88.0",
+  "separator": "§7 - ",
+  "isCoordinateFromBottom": "true",
+  "separator ": "§7 - 啊",
+  "isCoordinateFromBottom ": "true"
+}

@@ -1,0 +1,21 @@
+{
+  "key.conduitcore.category": "潮涌之心",
+  "key.conduitcore.hudeditor": "编辑 Hud",
+
+  "gui.buff.settingbutton": "增益状态 显示设置",
+  "gui.buff.enable": "是否启用：",
+  "gui.buff.offX": "X偏移(百分比)：",
+  "gui.buff.offY": "Y偏移(百分比)：",
+  "gui.buff.format": "显示格式：",
+  "gui.buff.isRightAligned": "是否右对齐：",
+  "gui.buff.isDescending": "是否向下延展：",
+
+  "gui.skill.settingbutton": "技能冷却 显示设置",
+  "gui.skill.enable": "是否启用：",
+  "gui.skill.offY": "Y偏移(固定数值)：",
+  "gui.skill.format": "显示格式：",
+  "gui.skill.separator": "连接符：",
+  "gui.skill.isCoordinateFromBottom": "以屏幕下方为起点：",
+  "gui.hudeditor.save": "保存",
+  "gui.hudeditor.close": "关闭"
+}

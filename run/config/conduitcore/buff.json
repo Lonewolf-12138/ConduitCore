@@ -1,0 +1,9 @@
+{
+  "enable": "true",
+  "format": "§f\u003cvalue\u003e §f\u003cattr\u003e §f(\u003cduration\u003e)",
+  "offX": "0.5",
+  "offY": "0.05",
+  "isRightAligned": "true",
+  "isDescending": "true",
+  "isRightAligned ": "true"
+}
