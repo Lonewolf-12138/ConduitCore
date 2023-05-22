@@ -1,6 +1,6 @@
-[19:23:50] [main/WARN] (FabricLoader/Knot) Class path entries reference missing files: D:\.a涓�娆℃�IntelliJ IDEA 2022.2.3\lib\idea_rt.jar - the game may not load properly!
-[19:23:50] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.18.2 with Fabric Loader 0.14.19
-[19:23:50] [main/INFO] (FabricLoader) Loading 54 mods:
+[13:35:22] [main/WARN] (FabricLoader/Knot) Class path entries reference missing files: D:\.a涓�娆℃�IntelliJ IDEA 2022.2.3\lib\idea_rt.jar - the game may not load properly!
+[13:35:22] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.18.2 with Fabric Loader 0.14.19
+[13:35:23] [main/INFO] (FabricLoader) Loading 54 mods:
 	- conduitcore 1.0
 	- fabric-api 0.76.0+1.18.2
 	- fabric-api-base 0.4.5+64b7c69360
@@ -55,13 +55,13 @@
 	- lazydfu 0.1.2
 	- minecraft 1.18.2
 	- smoothboot 1.18.2-1.7.0
-[19:23:53] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/10900/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.4+mixin.0.8.5/e13b4069fe3555969811d4474f78576c707bbe1c/sponge-mixin-0.12.4+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
-[19:23:53] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[19:23:53] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
-[19:23:53] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[19:23:54] [main/INFO] (Smooth Boot) Smooth Boot config initialized
-[19:24:01] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[19:24:02] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+[13:35:25] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/10900/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.4+mixin.0.8.5/e13b4069fe3555969811d4474f78576c707bbe1c/sponge-mixin-0.12.4+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[13:35:26] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[13:35:26] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
+[13:35:26] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[13:35:26] [main/INFO] (Smooth Boot) Smooth Boot config initialized
+[13:35:34] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[13:35:35] [Render thread/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-3.3.39.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:132) ~[authlib-3.3.39.jar:?]
@@ -75,185 +75,38 @@ com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
 Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
-	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:78) ~[authlib-3.3.39.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:80) ~[authlib-3.3.39.jar:?]
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-3.3.39.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:113) ~[authlib-3.3.39.jar:?]
 	... 9 more
-[19:24:02] [Render thread/INFO] (Minecraft) Setting user: Lonewolf12138
-[19:24:02] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[19:24:02] [Render thread/INFO] (Minecraft) [STDOUT]: Inventory HUD + has been initialized!
-[19:24:03] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
-[19:24:05] [Render thread/INFO] (Minecraft) Narrator library for x64 successfully loaded
-[19:24:05] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Key Bindings (v0), Fabric Renderer - Indigo, Inventory HUD +, Fabric Loader, Fabric Events Interaction (v0), Fabric Rendering (v0), Fabric Loot Tables (v1), Fabric Models (v0), Fabric Command API (v1), Fabric Registry Sync (v0), Fabric API Base, Fabric Renderer Registries (v1), Fabric Content Registries (v0), Fabric Game Test API (v1), Fabric Networking API (v1), Fabric Transfer API (v1), Fabric Data Generation API (v1), Fabric Rendering Fluids (v1), Fabric Key Binding API (v1), Fabric Commands (v0), Fabric Transitive Access Wideners (v1), Fabric Item API (v1), Smooth Boot, Fabric API Lookup API (v1), Fabric Networking (v0), Fabric Particles (v1), LazyDFU, Fabric Mining Level API (v1), Fabric Screen Handler API (v1), Fabric Renderer API (v1), Fabric Entity Events (v1), Fabric Object Builder API (v1), Fabric Lifecycle Events (v1), Fabric Rendering (v1), Fabric Crash Report Info (v1), Fabric Resource Loader (v0), Fabric Resource Conditions API (v1), Fabric BlockRenderLayer Registration (v1), ConduitCore, Fabric Textures (v0), Fabric Rendering Data Attachment (v1), Fabric Item Groups (v0), Fabric API, Fabric Biome API (v1), Fabric Game Rule API (v1), Fabric Events Lifecycle (v0), Fabric Containers (v0), Fabric Convention Tags, Fabric Loot API (v2), Fabric Dimensions API (v1), Fabric Screen API (v1))
-[19:24:05] [Render thread/INFO] (Minecraft) [STDOUT]: InvGUI Initialized
-[19:24:06] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[19:24:07] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek High Definition Audio)
-[19:24:07] [Render thread/INFO] (Minecraft) Sound engine started
-[19:24:07] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[19:24:07] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[19:24:07] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[19:24:07] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[19:24:07] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[19:24:07] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[19:24:07] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[19:24:08] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[19:24:08] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[19:24:08] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[19:24:13] [Render thread/INFO] (Minecraft) Connecting to 110.42.4.5, 10051
-[19:24:14] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[19:24:15] [InventoryHUD+ version check/INFO] (Minecraft) [CHAT] §7[§aInventoryHUD+§7] §f有新版本可用，[§e点击获取§f]
-[19:24:15] [Render thread/INFO] (Minecraft) [CHAT] Lonewolf12138加入了游戏
-[19:24:15] [Render thread/INFO] (Minecraft) [CHAT] Your game mode was set to Adventure by Server.
-[19:24:15] [Render thread/INFO] (Minecraft) Loaded 45 advancements
-[19:24:16] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 请输入“/login <密码>”以登录
-[19:24:17] [Render thread/WARN] (Minecraft) Unable to play unknown soundEvent: sound:error
-[19:24:18] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 已成功登录！
-[19:24:18] [Render thread/INFO] (Minecraft) [CHAT] 您拥有 2 个账户：
-[19:24:18] [Render thread/INFO] (Minecraft) [CHAT] lonewolf_12138, Lonewolf12138.
-[19:24:19] [Netty Client IO #6/INFO] (Minecraft) Found file D:\OriginWorld\ConduitCore\run\server-resource-packs\8de4526bdeabd768cab100a1dd9066281fbecc87 without verification hash
-[19:24:19] [Netty Client IO #6/INFO] (Minecraft) Applying server pack D:\OriginWorld\ConduitCore\run\server-resource-packs\8de4526bdeabd768cab100a1dd9066281fbecc87
-[19:24:19] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Key Bindings (v0), Fabric Renderer - Indigo, Inventory HUD +, Fabric Loader, Fabric Events Interaction (v0), Fabric Rendering (v0), Fabric Loot Tables (v1), Fabric Models (v0), Fabric Command API (v1), Fabric Registry Sync (v0), Fabric API Base, Fabric Renderer Registries (v1), Fabric Content Registries (v0), Fabric Game Test API (v1), Fabric Networking API (v1), Fabric Transfer API (v1), Fabric Data Generation API (v1), Fabric Rendering Fluids (v1), Fabric Key Binding API (v1), Fabric Commands (v0), Fabric Transitive Access Wideners (v1), Fabric Item API (v1), Smooth Boot, Fabric API Lookup API (v1), Fabric Networking (v0), Fabric Particles (v1), LazyDFU, Fabric Mining Level API (v1), Fabric Screen Handler API (v1), Fabric Renderer API (v1), Fabric Entity Events (v1), Fabric Object Builder API (v1), Fabric Lifecycle Events (v1), Fabric Rendering (v1), Fabric Crash Report Info (v1), Fabric Resource Loader (v0), Fabric Resource Conditions API (v1), Fabric BlockRenderLayer Registration (v1), ConduitCore, Fabric Textures (v0), Fabric Rendering Data Attachment (v1), Fabric Item Groups (v0), Fabric API, Fabric Biome API (v1), Fabric Game Rule API (v1), Fabric Events Lifecycle (v0), Fabric Containers (v0), Fabric Convention Tags, Fabric Loot API (v2), Fabric Dimensions API (v1), Fabric Screen API (v1)), 8de4526bdeabd768cab100a1dd9066281fbecc87
-[19:24:19] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 尝试为您加载资源包， 请点击 [同意] 按钮.
-[19:24:19] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 您同意了资源包下载， 请等待其下载完成.
-[19:24:19] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/lot_locked.png
-[19:24:19] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/inventory_slot_selected.png
-[19:24:19] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/inventory_slot_selected.png
-[19:24:19] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/inventory_slot_selected.png
-[19:24:19] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/inventory_slot_selected.png
-[19:24:19] [Worker-Main-6/WARN] (Minecraft) File minecraft:sounds/littleroom/anubis/groundimpact1.ogg does not exist, cannot add it to event littleroom_anubis:littleroom.anubis.groundimpact1
-[19:24:19] [Worker-Main-6/WARN] (Minecraft) File minecraft:sounds/littleroom/anubis/groundimpact2.ogg does not exist, cannot add it to event littleroom_anubis:littleroom.anubis.groundimpact2
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:emerald#inventory' referenced from: minecraft:emerald#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:wooden_pickaxe#inventory' referenced from: minecraft:wooden_pickaxe#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:golden_axe#inventory' referenced from: minecraft:golden_axe#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'littleroom_gigas:items/crabmeat' referenced from: minecraft:potato#inventory: java.io.FileNotFoundException: littleroom_gigas:models/items/crabmeat.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:iron_hoe#inventory' referenced from: minecraft:iron_hoe#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:player_head#inventory' referenced from: minecraft:player_head#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:golden_sword#inventory' referenced from: minecraft:golden_sword#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:diamond_sword#inventory' referenced from: minecraft:diamond_sword#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:glow_berries#inventory' referenced from: minecraft:glow_berries#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/glasses' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/glasses.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/white_cat_tail' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/white_cat_tail.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_black_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_black_wings.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/red_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/red_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/dog_mask' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/dog_mask.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/ender_dragon_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/ender_dragon_wings.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/spider_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/spider_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/cool_sunglasses' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/cool_sunglasses.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/biker_helmet' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/biker_helmet.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/dark_jack_o_lantern_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/dark_jack_o_lantern_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/mining_helmet' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/mining_helmet.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/mysterious_hood' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/mysterious_hood.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/brown_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/brown_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/top_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/top_hat.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/turquoise_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/turquoise_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_red_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_red_wings.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/cat_ears' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/cat_ears.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/axe_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/axe_hat.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_blue_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_blue_wings.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/santa_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/santa_hat.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/deadmau5_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/deadmau5_hat.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/jack_o_lantern_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/jack_o_lantern_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_purple_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_purple_wings.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/straw_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/straw_hat.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/welding_mask' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/welding_mask.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/bat_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/bat_wings.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/all_black_cat_tail' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/all_black_cat_tail.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/cave_spider_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/cave_spider_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/ruby_pickaxe_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/ruby_pickaxe_hat.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/cigar' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/cigar.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/bones_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/bones_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_turquoise_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_turquoise_wings.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/purple_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/purple_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/witch_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/witch_hat.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/blue_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/blue_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/black_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/black_backpack.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'itemsadder:item/black_cat_tail' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/black_cat_tail.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:sweet_berries#inventory' referenced from: minecraft:sweet_berries#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:cookie#inventory' referenced from: minecraft:cookie#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:shears#inventory' referenced from: minecraft:shears#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:weed_leaf' referenced from: minecraft:cooked_beef#inventory: java.io.FileNotFoundException: minecraft:models/weed_leaf.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:grape' referenced from: minecraft:cooked_beef#inventory: java.io.FileNotFoundException: minecraft:models/grape.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/shelf' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/shelf.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:exit_icon' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/exit_icon.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/cart' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/cart.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/coach' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/coach.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:grape_seeds' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/grape_seeds.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage0' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage0.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage3' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage3.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage4' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage4.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage1' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage1.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage2' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage2.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:weed_seed' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/weed_seed.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:arrow_previous_icon' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/arrow_previous_icon.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/weed/stage3' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/weed/stage3.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/weed/stage1' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/weed/stage1.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/weed/stage2' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/weed/stage2.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/weed/stage0' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/weed/stage0.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:arrow_next_icon' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/arrow_next_icon.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/chair' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/chair.json
-[19:24:19] [Worker-Main-2/WARN] (Minecraft) Unable to load model: 'minecraft:default/table' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/table.json
-[19:24:20] [Worker-Main-2/WARN] (Minecraft) Unable to resolve texture reference: #missing in minecraft:block/plants/ancient/ancient_fern_2
-[19:24:20] [Worker-Main-2/WARN] (Minecraft) Unable to resolve texture reference: #missing in minecraft:furnitures/summer_001/oaklog
-[19:24:20] [Worker-Main-2/WARN] (Minecraft) Unable to resolve texture reference: #missing in minecraft:furnitures/summer_001/oakplant
-[19:24:20] [Worker-Main-2/WARN] (Minecraft) Unable to resolve texture reference: #missing in minecraft:item/model/cosmetic/rabbit/backpack_5_rabbitbox
-[19:24:20] [Worker-Main-6/ERROR] (Minecraft) Using missing texture, unable to load minecraft:textures/required/particle.png : java.io.FileNotFoundException: minecraft:textures/required/particle.png
-[19:24:20] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek High Definition Audio)
-[19:24:20] [Render thread/INFO] (Minecraft) Sound engine started
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[19:24:20] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[19:24:21] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 资源包已成功加载！ 谢谢您的配合.
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] ServerTeleport >>> 正在传送到服务器 conduit-1 。
-[19:24:25] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[19:24:25] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[19:24:25] [Render thread/WARN] (Minecraft) Received packet for unknown team CMINP0: team action: REMOVE, player action: null
-[19:24:25] [Render thread/WARN] (Minecraft) Unknown custom packed identifier: cpm_net:hello
-[19:24:25] [Render thread/WARN] (Minecraft) Received packet for unknown team 24999960.0A: team action: REMOVE, player action: null
-[19:24:25] [Render thread/WARN] (Minecraft) Received packet for unknown team 24999965.0A: team action: REMOVE, player action: null
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 发现插件存在最新版本: v1.7.0.0
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] - 服务器运行版本: v1.6.5.2
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] §6- §3下载地址: §d§d§l[点击查看]
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] - 更新日志: 大更新（请查看原帖中的更新日志）
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] [HolographicDisplays] Found an update: v3.0.2. Download:
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] >> http://dev.bukkit.org/bukkit-plugins/holographic-displays
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] An update for FastAsyncVoxelSniper is available.
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] You are running version 2.3.0, the latest version is 2.8.0
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] Update at https://dev.bukkit.org/projects/favs
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] There is a new version of IridiumSkyblock available.
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] Download
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] Latest version: 4.0.0 | Your version: 3.2.9
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] 
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] [Interactions]  There is a new version available. (1.33.3)
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] You can download it at: https://www.spigotmc.org/resources/87762/
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] [Codex]  There is a new version available. (1.12.1)
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] You can download it at: https://www.spigotmc.org/resources/90371/
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] 你的上帝模式已被设置为 Disabled ，操作玩家 Server.
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] (FAWE) An update for FastAsyncWorldEdit is available. You are 189 build(s) out of date.\nYou are running build 245, the latest version is build 434.\nUpdate at https://www.spigotmc.org/resources/13932/
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] --------------------------------------------
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] MMOItems 6.9.3 is available!
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] https://www.spigotmc.org/resources/39267/
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] You can disable this notification in the config file.
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] --------------------------------------------
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] An update for PlaceholderAPI (PlaceholderAPI v2.11.3)
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] is available at https://www.spigotmc.org/resources/placeholderapi.6245/
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] --------------------------------------------
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] RPGInventory 1.7.5 is available!
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] https://www.spigotmc.org/resources/99445/
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] You can disable this notification in the config file.
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] --------------------------------------------
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] [+] Lonewolf12138
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] §8[ §fConduit §8] §7§f你今天还没有签到! §c§l[点击此处打开签到界面]
-[19:24:25] [Render thread/INFO] (Minecraft) Loaded 0 advancements
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] Thanks for using IridiumSkyblock, if you like the plugin, consider donating at www.patreon.com/Peaches_MLG
-[19:24:25] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999960.0A'.
+[13:35:35] [Render thread/INFO] (Minecraft) Setting user: Lonewolf12138
+[13:35:36] [Render thread/INFO] (Minecraft) [STDOUT]: Inventory HUD + has been initialized!
+[13:35:36] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[13:35:36] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
+[13:35:38] [Render thread/INFO] (Minecraft) Narrator library for x64 successfully loaded
+[13:35:38] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric BlockRenderLayer Registration (v1), Fabric Content Registries (v0), Fabric Loader, Fabric API Base, Fabric Networking API (v1), Fabric Game Rule API (v1), Smooth Boot, Fabric Resource Conditions API (v1), Fabric Key Binding API (v1), Fabric Particles (v1), Fabric Rendering (v0), Fabric Models (v0), Fabric Rendering Data Attachment (v1), Fabric Events Interaction (v0), Fabric API Lookup API (v1), Fabric Transitive Access Wideners (v1), Fabric Screen API (v1), Fabric Containers (v0), Fabric Biome API (v1), Fabric Dimensions API (v1), Fabric Renderer Registries (v1), Fabric Networking (v0), Inventory HUD +, Fabric Item Groups (v0), Fabric Transfer API (v1), Fabric Crash Report Info (v1), Fabric Renderer - Indigo, Fabric Object Builder API (v1), Fabric Convention Tags, Fabric Rendering (v1), Fabric Mining Level API (v1), Fabric Screen Handler API (v1), Fabric Rendering Fluids (v1), Fabric API, Fabric Renderer API (v1), Fabric Entity Events (v1), Fabric Loot API (v2), Fabric Resource Loader (v0), Fabric Lifecycle Events (v1), ConduitCore, Fabric Events Lifecycle (v0), Fabric Loot Tables (v1), Fabric Item API (v1), Fabric Command API (v1), Fabric Registry Sync (v0), Fabric Key Bindings (v0), Fabric Data Generation API (v1), Fabric Game Test API (v1), LazyDFU, Fabric Textures (v0), Fabric Commands (v0))
+[13:35:38] [Render thread/INFO] (Minecraft) [STDOUT]: InvGUI Initialized
+[13:35:39] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[13:35:40] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek High Definition Audio)
+[13:35:40] [Render thread/INFO] (Minecraft) Sound engine started
+[13:35:40] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[13:35:40] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[13:35:40] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[13:35:40] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[13:35:40] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[13:35:40] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[13:35:40] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[13:35:41] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[13:35:41] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[13:35:41] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[13:35:44] [Render thread/INFO] (Minecraft) Connecting to 110.42.4.5, 10051
+[13:35:46] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[13:35:46] [InventoryHUD+ version check/INFO] (Minecraft) [CHAT] §7[§aInventoryHUD+§7] §f有新版本可用，[§e点击获取§f]
+[13:35:47] [Render thread/INFO] (Minecraft) [CHAT] Lonewolf12138加入了游戏
+[13:35:47] [Render thread/INFO] (Minecraft) [CHAT] Your game mode was set to Adventure by Server.
+[13:35:47] [Render thread/INFO] (Minecraft) Loaded 45 advancements
+[13:35:47] [Render thread/ERROR] (Minecraft) Error executing task on Client
+java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'CMINP0'.
 	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
 	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
 	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
@@ -270,247 +123,109 @@ java.lang.IllegalStateException: Player is either on another team or not on any 
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:24:25] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0A'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:24:25] [Render thread/INFO] (Minecraft) [CHAT] _________________/ CMI \_________________\n| 9.5.1.1 is now available! Your version: 9.0.2.9\n----------------------------------------
-[19:24:26] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0A'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:24:26] [Render thread/INFO] (Minecraft) [CHAT] [ViaVersion] There is a newer plugin version available: 4.6.2, you're on: 4.5.1
-[19:24:27] [Render thread/INFO] (Minecraft) [CHAT] (拍卖行) You do not use the latest version of the plugin! Thank you for taking the latest version to avoid any risk of problem!
-[19:24:27] [Render thread/INFO] (Minecraft) [CHAT] (拍卖行) Download plugin here: https://groupez.dev/resources/1
-[19:24:30] [Render thread/INFO] (Minecraft) [CHAT] *************************************
-[19:24:30] [Render thread/INFO] (Minecraft) [CHAT] 检测到可以进行教程模板加载/更新！
-[19:24:30] [Render thread/INFO] (Minecraft) [CHAT] 如果你是第一次使用插件，教程会对你有很大帮助哦~！
-[19:24:30] [Render thread/INFO] (Minecraft) [CHAT] 
-[19:24:30] [Render thread/INFO] (Minecraft) [CHAT] 想要加载/更新教程，请输入 /fw teach
-[19:24:30] [Render thread/INFO] (Minecraft) [CHAT] 
-[19:24:30] [Render thread/INFO] (Minecraft) [CHAT] (附加提示：更新教程会重载插件~)
-[19:24:30] [Render thread/INFO] (Minecraft) [CHAT] *************************************
-[19:24:30] [Render thread/INFO] (Minecraft) [CHAT] 嘿！ 你有可领取的奖励！在冒险笔记中领取它们！
-[19:25:04] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 15 秒
-[19:25:12] [Render thread/WARN] (Minecraft) Received packet for unknown team 24999965.0B: team action: REMOVE, player action: null
-[19:25:12] [Render thread/INFO] (Minecraft) [CHAT] [+] Memory520
-[19:25:12] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0B'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:25:13] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0A'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:25:13] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0B'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:25:13] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0A'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:26:17] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 25 秒
-[19:26:27] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 14.6 秒
-[19:26:27] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 14.6 秒
-[19:27:02] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 25 秒
-[19:27:38] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 25 秒
-[19:28:10] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 25 秒
-[19:28:38] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 25 秒
-[19:28:55] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 7.8 秒
-[19:28:55] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 7.8 秒
-[19:28:56] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 技能冷却中,你需要等待 15 秒
-[19:30:04] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0B'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:30:04] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0A'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:30:04] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0B'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:30:04] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '24999965.0A'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:30:25] [Render thread/WARN] (Minecraft) Received packet for unknown team 84999960.0A: team action: REMOVE, player action: null
-[19:30:25] [Render thread/INFO] (Minecraft) [CHAT] [+] xiao_kir
-[19:30:25] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '84999960.0A'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[19:30:26] [Render thread/ERROR] (Minecraft) Error executing task on Client
-java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team '84999960.0A'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:228) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.network.ClientPlayNetworkHandler.onTeam(ClientPlayNetworkHandler.java:2094) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:129) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.packet.s2c.play.TeamS2CPacket.apply(TeamS2CPacket.java:14) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.network.NetworkThreadUtils.method_11072(NetworkThreadUtils.java:22) ~[minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:157) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:131) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:116) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1085) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:737) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:236) [minecraft-merged-project-root-1.18.2-net.fabricmc.yarn.1_18_2.1.18.2+build.4-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:462) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.19.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+[13:35:47] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 请输入“/login <密码>”以登录
+[13:35:48] [Render thread/WARN] (Minecraft) Unable to play unknown soundEvent: sound:error
+[13:35:52] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 请输入“/login <密码>”以登录
+[13:35:52] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 已成功登录！
+[13:35:52] [Render thread/INFO] (Minecraft) [CHAT] 您拥有 2 个账户：
+[13:35:52] [Render thread/INFO] (Minecraft) [CHAT] lonewolf_12138, Lonewolf12138.
+[13:35:52] [Netty Client IO #1/INFO] (Minecraft) Found file D:\OriginWorld\ConduitCore\run\server-resource-packs\8de4526bdeabd768cab100a1dd9066281fbecc87 without verification hash
+[13:35:52] [Netty Client IO #1/INFO] (Minecraft) Applying server pack D:\OriginWorld\ConduitCore\run\server-resource-packs\8de4526bdeabd768cab100a1dd9066281fbecc87
+[13:35:52] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric BlockRenderLayer Registration (v1), Fabric Content Registries (v0), Fabric Loader, Fabric API Base, Fabric Networking API (v1), Fabric Game Rule API (v1), Smooth Boot, Fabric Resource Conditions API (v1), Fabric Key Binding API (v1), Fabric Particles (v1), Fabric Rendering (v0), Fabric Models (v0), Fabric Rendering Data Attachment (v1), Fabric Events Interaction (v0), Fabric API Lookup API (v1), Fabric Transitive Access Wideners (v1), Fabric Screen API (v1), Fabric Containers (v0), Fabric Biome API (v1), Fabric Dimensions API (v1), Fabric Renderer Registries (v1), Fabric Networking (v0), Inventory HUD +, Fabric Item Groups (v0), Fabric Transfer API (v1), Fabric Crash Report Info (v1), Fabric Renderer - Indigo, Fabric Object Builder API (v1), Fabric Convention Tags, Fabric Rendering (v1), Fabric Mining Level API (v1), Fabric Screen Handler API (v1), Fabric Rendering Fluids (v1), Fabric API, Fabric Renderer API (v1), Fabric Entity Events (v1), Fabric Loot API (v2), Fabric Resource Loader (v0), Fabric Lifecycle Events (v1), ConduitCore, Fabric Events Lifecycle (v0), Fabric Loot Tables (v1), Fabric Item API (v1), Fabric Command API (v1), Fabric Registry Sync (v0), Fabric Key Bindings (v0), Fabric Data Generation API (v1), Fabric Game Test API (v1), LazyDFU, Fabric Textures (v0), Fabric Commands (v0)), 8de4526bdeabd768cab100a1dd9066281fbecc87
+[13:35:52] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 尝试为您加载资源包， 请点击 [同意] 按钮.
+[13:35:52] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 您同意了资源包下载， 请等待其下载完成.
+[13:35:52] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/lot_locked.png
+[13:35:52] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/inventory_slot_selected.png
+[13:35:52] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/inventory_slot_selected.png
+[13:35:52] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/inventory_slot_selected.png
+[13:35:52] [Worker-Main-9/WARN] (Minecraft) Unable to read definition 'minecraft:default' in fonts.json in resourcepack: '8de4526bdeabd768cab100a1dd9066281fbecc87': cosmetic:textures/custom/menu/inventory_slot_selected.png
+[13:35:53] [Worker-Main-6/WARN] (Minecraft) File minecraft:sounds/littleroom/anubis/groundimpact1.ogg does not exist, cannot add it to event littleroom_anubis:littleroom.anubis.groundimpact1
+[13:35:53] [Worker-Main-6/WARN] (Minecraft) File minecraft:sounds/littleroom/anubis/groundimpact2.ogg does not exist, cannot add it to event littleroom_anubis:littleroom.anubis.groundimpact2
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:emerald#inventory' referenced from: minecraft:emerald#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:wooden_pickaxe#inventory' referenced from: minecraft:wooden_pickaxe#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:golden_axe#inventory' referenced from: minecraft:golden_axe#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'littleroom_gigas:items/crabmeat' referenced from: minecraft:potato#inventory: java.io.FileNotFoundException: littleroom_gigas:models/items/crabmeat.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:iron_hoe#inventory' referenced from: minecraft:iron_hoe#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:player_head#inventory' referenced from: minecraft:player_head#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:golden_sword#inventory' referenced from: minecraft:golden_sword#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:diamond_sword#inventory' referenced from: minecraft:diamond_sword#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:glow_berries#inventory' referenced from: minecraft:glow_berries#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/glasses' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/glasses.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/white_cat_tail' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/white_cat_tail.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_black_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_black_wings.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/red_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/red_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/dog_mask' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/dog_mask.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/ender_dragon_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/ender_dragon_wings.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/spider_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/spider_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/cool_sunglasses' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/cool_sunglasses.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/biker_helmet' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/biker_helmet.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/dark_jack_o_lantern_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/dark_jack_o_lantern_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/mining_helmet' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/mining_helmet.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/mysterious_hood' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/mysterious_hood.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/brown_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/brown_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/top_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/top_hat.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/turquoise_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/turquoise_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_red_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_red_wings.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/cat_ears' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/cat_ears.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/axe_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/axe_hat.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_blue_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_blue_wings.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/santa_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/santa_hat.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/deadmau5_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/deadmau5_hat.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/jack_o_lantern_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/jack_o_lantern_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_purple_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_purple_wings.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/straw_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/straw_hat.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/welding_mask' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/welding_mask.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/bat_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/bat_wings.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/all_black_cat_tail' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/all_black_cat_tail.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/cave_spider_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/cave_spider_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/ruby_pickaxe_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/ruby_pickaxe_hat.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/cigar' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/cigar.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/bones_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/bones_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/demoniac_turquoise_wings' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/demoniac_turquoise_wings.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/purple_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/purple_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/witch_hat' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/witch_hat.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/blue_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/blue_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/black_backpack' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/black_backpack.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'itemsadder:item/black_cat_tail' referenced from: minecraft:feather#inventory: java.io.FileNotFoundException: itemsadder:models/item/black_cat_tail.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:sweet_berries#inventory' referenced from: minecraft:sweet_berries#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:cookie#inventory' referenced from: minecraft:cookie#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:shears#inventory' referenced from: minecraft:shears#inventory: net.minecraft.util.InvalidIdentifierException: Non [a-z0-9/._-] character in path of location: minecraft:item/weapon/zhongpao_B_1
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:weed_leaf' referenced from: minecraft:cooked_beef#inventory: java.io.FileNotFoundException: minecraft:models/weed_leaf.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:grape' referenced from: minecraft:cooked_beef#inventory: java.io.FileNotFoundException: minecraft:models/grape.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/shelf' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/shelf.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:exit_icon' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/exit_icon.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/cart' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/cart.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/coach' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/coach.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:grape_seeds' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/grape_seeds.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage0' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage0.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage3' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage3.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage4' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage4.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage1' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage1.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/grape/stage2' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/grape/stage2.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:weed_seed' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/weed_seed.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:arrow_previous_icon' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/arrow_previous_icon.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/weed/stage3' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/weed/stage3.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/weed/stage1' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/weed/stage1.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/weed/stage2' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/weed/stage2.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/weed/stage0' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/weed/stage0.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:arrow_next_icon' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/arrow_next_icon.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/chair' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/chair.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to load model: 'minecraft:default/table' referenced from: minecraft:paper#inventory: java.io.FileNotFoundException: minecraft:models/default/table.json
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to resolve texture reference: #missing in minecraft:block/plants/ancient/ancient_fern_2
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to resolve texture reference: #missing in minecraft:furnitures/summer_001/oaklog
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to resolve texture reference: #missing in minecraft:furnitures/summer_001/oakplant
+[13:35:53] [Worker-Main-11/WARN] (Minecraft) Unable to resolve texture reference: #missing in minecraft:item/model/cosmetic/rabbit/backpack_5_rabbitbox
+[13:35:53] [Worker-Main-10/ERROR] (Minecraft) Using missing texture, unable to load minecraft:textures/required/particle.png : java.io.FileNotFoundException: minecraft:textures/required/particle.png
+[13:35:54] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek High Definition Audio)
+[13:35:54] [Render thread/INFO] (Minecraft) Sound engine started
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[13:35:54] [Render thread/INFO] (Minecraft) [CHAT] [ Conduit ] 资源包已成功加载！ 谢谢您的配合.

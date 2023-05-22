@@ -5,10 +5,13 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
+import net.minecraft.client.gui.widget.TexturedButtonWidget;
 import net.minecraft.client.render.*;
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 
 import java.text.DecimalFormat;
 
@@ -19,6 +22,10 @@ import java.text.DecimalFormat;
  */
 
 public class HudEditorScreen extends Screen {
+
+    private static Identifier buffBg = new Identifier("conduitcore", "textures/gui/buff.png");
+
+    private static Identifier cdBg = new Identifier("conduitcore", "textures/gui/cd.png");
 
     public HudEditorScreen() {
         this(Text.of("HudEditorScreen"));
@@ -36,35 +43,61 @@ public class HudEditorScreen extends Screen {
     protected void init() {
         HudEditorScreen hudEditorScreen = this;
         // buff
-        this.addDrawableChild(new ButtonWidget(width / 2 - 100, 17, 80, 20, Text.of(I18n.translate("gui.buff.settingbutton")), new ButtonWidget.PressAction() {
+        TexturedButtonWidget buffWidget = this.addDrawableChild(new TexturedButtonWidget(width / 2 - 60, 8, 40, 40, this instanceof BuffHudEditorScreen ? 0 : 40, 0, 0, buffBg, 80, 80, new ButtonWidget.PressAction() {
             @Override
             public void onPress(ButtonWidget button) {
                 if (!(hudEditorScreen instanceof BuffHudEditorScreen)) {
                     client.setScreen(new BuffHudEditorScreen());
                 }
             }
-
         }, new ButtonWidget.TooltipSupplier() {
             @Override
             public void onTooltip(ButtonWidget button, MatrixStack matrices, int mouseX, int mouseY) {
                 renderTooltip(matrices, Text.of(I18n.translate("gui.buff.settingbutton")), mouseX, mouseY);
             }
-        }));
-        // 技能
-        this.addDrawableChild(new ButtonWidget(width / 2  + 20, 17, 80, 20, Text.of(I18n.translate("gui.skill.settingbutton")), new ButtonWidget.PressAction() {
+        }, LiteralText.EMPTY));
+        TexturedButtonWidget cdWidget = this.addDrawableChild(new TexturedButtonWidget(width / 2 + 20, 8, 40, 40, this instanceof SkillHudEditorScreen ? 0 : 40, 0, 0, cdBg, 80, 80, new ButtonWidget.PressAction() {
             @Override
             public void onPress(ButtonWidget button) {
                 if (!(hudEditorScreen instanceof SkillHudEditorScreen)) {
                     client.setScreen(new SkillHudEditorScreen());
                 }
             }
-
         }, new ButtonWidget.TooltipSupplier() {
             @Override
             public void onTooltip(ButtonWidget button, MatrixStack matrices, int mouseX, int mouseY) {
                 renderTooltip(matrices, Text.of(I18n.translate("gui.skill.settingbutton")), mouseX, mouseY);
             }
-        }));
+        }, LiteralText.EMPTY));
+//        this.addDrawableChild(new ButtonWidget(width / 2 - 100, 17, 80, 20, Text.of(I18n.translate("gui.buff.settingbutton")), new ButtonWidget.PressAction() {
+//            @Override
+//            public void onPress(ButtonWidget button) {
+//                if (!(hudEditorScreen instanceof BuffHudEditorScreen)) {
+//                    client.setScreen(new BuffHudEditorScreen());
+//                }
+//            }
+//
+//        }, new ButtonWidget.TooltipSupplier() {
+//            @Override
+//            public void onTooltip(ButtonWidget button, MatrixStack matrices, int mouseX, int mouseY) {
+//                renderTooltip(matrices, Text.of(I18n.translate("gui.buff.settingbutton")), mouseX, mouseY);
+//            }
+//        }));
+        // 技能
+//        this.addDrawableChild(new ButtonWidget(width / 2  + 20, 17, 80, 20, Text.of(I18n.translate("gui.skill.settingbutton")), new ButtonWidget.PressAction() {
+//            @Override
+//            public void onPress(ButtonWidget button) {
+//                if (!(hudEditorScreen instanceof SkillHudEditorScreen)) {
+//                    client.setScreen(new SkillHudEditorScreen());
+//                }
+//            }
+//
+//        }, new ButtonWidget.TooltipSupplier() {
+//            @Override
+//            public void onTooltip(ButtonWidget button, MatrixStack matrices, int mouseX, int mouseY) {
+//                renderTooltip(matrices, Text.of(I18n.translate("gui.skill.settingbutton")), mouseX, mouseY);
+//            }
+//        }));
         // 保存
         this.addDrawableChild(new ButtonWidget(width / 2  - 60, height - 25, 40, 20, Text.of(I18n.translate("gui.hudeditor.save")), new ButtonWidget.PressAction() {
             @Override
