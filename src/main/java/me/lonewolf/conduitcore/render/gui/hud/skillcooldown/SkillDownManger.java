@@ -2,6 +2,7 @@ package me.lonewolf.conduitcore.render.gui.hud.skillcooldown;
 
 import me.lonewolf.conduitcore.util.config.SkillCoolDownConfig;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
@@ -27,6 +28,7 @@ public class SkillDownManger {
     public static void init(){
         ClientTickEvents.END_CLIENT_TICK.register(client -> tickUpdate());
         HudRenderCallback.EVENT.register((matrixStack, tickDelta) -> render(matrixStack));
+        ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {clearSkillCoolDown();});
     }
 
     public static void addSkillCoolDown(String skill, long coolDown){

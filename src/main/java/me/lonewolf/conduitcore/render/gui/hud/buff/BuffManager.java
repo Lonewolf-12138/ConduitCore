@@ -2,6 +2,7 @@ package me.lonewolf.conduitcore.render.gui.hud.buff;
 
 import me.lonewolf.conduitcore.util.config.BuffConfig;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
@@ -32,6 +33,7 @@ public class BuffManager {
     public static void init(){
         ClientTickEvents.END_CLIENT_TICK.register(client -> tickUpdate());
         HudRenderCallback.EVENT.register((matrixStack, tickDelta) -> render(matrixStack));
+        ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {clearBuff();});
     }
 
     public static void addBuff(String directOrPercentage, String name, String attr, Buff buff){
