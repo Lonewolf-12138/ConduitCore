@@ -88,7 +88,8 @@ public class NumberTextFieldWidget extends ClickableWidget implements Drawable, 
         this.offY = y;
         this.maxNumber = maxNumber;
         this.minNumber = minNumber;
-        this.text = text.asString();
+        this.text = text.getString();
+//        this.text = text.asString();
         this.maxLength = 32;
         this.drawsBackground = true;
         this.focusUnlocked = true;
@@ -120,7 +121,7 @@ public class NumberTextFieldWidget extends ClickableWidget implements Drawable, 
 
     protected MutableText getNarrationMessage() {
         Text text = this.getMessage();
-        return new TranslatableText("gui.narrate.editBox", new Object[]{text, this.text});
+        return Text.translatable("gui.narrate.editBox", new Object[]{text, this.text});
     }
 
     public void setText(String text) {
@@ -663,6 +664,6 @@ public class NumberTextFieldWidget extends ClickableWidget implements Drawable, 
     }
 
     public void appendNarrations(NarrationMessageBuilder builder) {
-        builder.put(NarrationPart.TITLE, new TranslatableText("narration.edit_box", new Object[]{this.getText()}));
+        builder.put(NarrationPart.TITLE, Text.translatable("narration.edit_box", new Object[]{this.getText()}));
     }
 }

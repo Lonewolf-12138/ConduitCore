@@ -80,7 +80,8 @@ public class FormatTextFieldWidget extends ClickableWidget implements Drawable, 
         this.tips = tips;
         this.offX = x;
         this.offY = y;
-        this.text = text.asString();
+//        this.text = text.asString();
+        this.text = text.getString();
         this.maxLength = 320;
         this.drawsBackground = true;
         this.focusUnlocked = true;
@@ -122,7 +123,7 @@ public class FormatTextFieldWidget extends ClickableWidget implements Drawable, 
 
     protected MutableText getNarrationMessage() {
         Text text = this.getMessage();
-        return new TranslatableText("gui.narrate.editBox", new Object[]{text, this.text});
+        return Text.translatable("gui.narrate.editBox", new Object[]{text, this.text});
     }
 
     public void setText(String text) {
@@ -630,6 +631,6 @@ public class FormatTextFieldWidget extends ClickableWidget implements Drawable, 
     }
 
     public void appendNarrations(NarrationMessageBuilder builder) {
-        builder.put(NarrationPart.TITLE, new TranslatableText("narration.edit_box", new Object[]{this.getText()}));
+        builder.put(NarrationPart.TITLE, Text.translatable("narration.edit_box", new Object[]{this.getText()}));
     }
 }
